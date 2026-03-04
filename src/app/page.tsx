@@ -1,184 +1,304 @@
 export default function Home() {
   return (
     <div>
-      <header className="sticky top-0 z-50 glass border-b border-primary/10 px-4 md:px-10 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-4 text-primary">
-          <div className="size-8 bg-primary/20 rounded-lg flex items-center justify-center">
-            <span className="material-symbols-outlined text-primary">pets</span>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1d1328]/80 backdrop-blur-xl border-b border-white/10 px-4 md:px-10 h-16 flex items-center justify-between anim-slide-down">
+        <div className="flex items-center gap-2">
+          <div className="bg-primary p-1.5 rounded-lg flex items-center justify-center">
+            <span className="material-symbols-outlined text-white text-xl">
+              pets
+            </span>
           </div>
-          <h2 className="text-slate-900 dark:text-slate-100 text-xl font-bold tracking-tight">
+          <span className="text-xl font-extrabold tracking-tight text-slate-100">
             Ladrido
-          </h2>
+          </span>
+        </div>
+        <div className="hidden md:flex items-center gap-8">
+          <a
+            className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+            href="#"
+          >
+            Inicio
+          </a>
+          <a
+            className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+            href="#"
+          >
+            Razas
+          </a>
+          <a
+            className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+            href="#"
+          >
+            Grupos
+          </a>
         </div>
         <div className="flex items-center gap-4">
-          <button className="p-2 rounded-xl glass hover:bg-primary/20 transition-colors">
-            <span className="material-symbols-outlined">search</span>
+          <button className="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-xl text-sm font-bold transition-all hover:scale-[1.02]">
+            Explorar
           </button>
-          <button className="p-2 rounded-xl glass hover:bg-primary/20 transition-colors">
-            <span className="material-symbols-outlined text-rose-500">
-              favorite
+          <div className="size-9 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center cursor-pointer">
+            <span className="material-symbols-outlined text-primary text-xl">
+              person
             </span>
-          </button>
-          <div className="h-10 w-10 rounded-full border-2 border-primary/30 overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              alt="User profile avatar portrait"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-vq7QwWxULJ80bt-1XTv99ybR_HtYU9yOIxdHJ889uF0J0boXsAooLAyqsl8fiq42ipGSN8tLW535zZzrBh-a-Zk6pDaDmtiAFgm0Jy4hdI68qIicKApvShaP11xll0pleazWnblGowifCQ7kDbZESbyhltg7x4llarR1x-zc2WCl3b1XZih_kVK6NeMWyJlP6QDUpB_4MDbOXaUDZn5YAVf0ygiEMkqhUXBi4sFZgr7z5Z8XD1zZ2LjHvBTglGvuKAOPjPGc"
-            />
           </div>
         </div>
-      </header>
-      <main className="max-w-6xl mx-auto px-4 pb-24">
-        <div className="relative mt-6 rounded-xl overflow-hidden min-h-[450px] flex flex-col justify-end group">
-          <img
-            className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-            alt="Golden Retriever sitting majestically in a field"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC76EQscPkaMIKfkrdW95wP5enPzY9gckkzynohv4YZI-LcW7pekCr1cXJPK5mTCb_ry_EPGm-Sk_6-4smEfjyh61BHPKmp9XIv7m81ps_5aUlUOxmQDviQfmk2nNBqawmIUGy1B913GScqVoozGArolobg2TNRKI7FEmp7fzfq96FUo9vCjCskUdflSVY_uWQ-ona_5jLbAv8joCWdZzFO8QXW66GV6rwnijKtua_qII8i1j65fa6P3DupOUMVHQUNapIbsOXK"
-          />
-          <div className="absolute inset-0 hero-gradient"></div>
-          <div className="relative p-8 md:p-12 space-y-4">
-            <button className="glass-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary flex items-center gap-2 hover:bg-primary hover:text-white transition-all">
-              <span className="material-symbols-outlined text-sm">groups</span>
-              Working Group
-            </button>
-            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tighter">
-              Golden Retriever
-            </h1>
-            <p className="text-slate-300 max-w-2xl text-lg leading-relaxed">
-              Known for their intelligence and versatile working ability, Golden
-              Retrievers are among the most popular breeds worldwide.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-          <div className="glass p-6 rounded-xl flex flex-col gap-3">
-            <span className="material-symbols-outlined text-primary text-3xl">
-              psychology
-            </span>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                Temperament
-              </h3>
-              <p className="text-lg font-medium">
-                Friendly, Intelligent, Devoted
-              </p>
-            </div>
-          </div>
-          <div className="glass p-6 rounded-xl flex flex-col gap-3">
-            <span className="material-symbols-outlined text-primary text-3xl">
-              location_on
-            </span>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                Origin
-              </h3>
-              <p className="text-lg font-medium">Scotland, United Kingdom</p>
-            </div>
-          </div>
-          <div className="glass p-6 rounded-xl flex flex-col gap-3">
-            <span className="material-symbols-outlined text-primary text-3xl">
-              hourglass_empty
-            </span>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                Life Expectancy
-              </h3>
-              <p className="text-lg font-medium">10 - 12 Years</p>
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
-          <div className="lg:col-span-2 space-y-6">
-            <div className="glass p-8 rounded-xl">
-              <h2 className="text-2xl font-bold mb-4">About the Breed</h2>
-              <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
-                <p>
-                  The Golden Retriever is a sturdy, muscular dog of medium size,
-                  famous for the dense, lustrous coat of gold that gives the
-                  breed its name. The broad head, with its friendly and
-                  intelligent eyes, short ears, and straight muzzle, is a breed
-                  hallmark.
-                </p>
-                <p>
-                  They are particularly renowned for being patient and
-                  fun-loving with children. This is a breed that requires plenty
-                  of daily exercise: a Golden who does not get enough activity
-                  is likely to engage in undesirable behavior.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="lg:col-span-1">
-            <div className="glass-primary p-8 rounded-xl h-full flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute -right-10 -top-10 opacity-10">
-                <span className="material-symbols-outlined text-[120px]">
-                  workspace_premium
+      </nav>
+      <main className="pt-16 bg-[#0f0817]">
+        <section className="hero-gradient relative overflow-hidden py-16 md:py-24 px-6 md:px-20">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="z-10 flex flex-col gap-8 anim-fade-in">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+                <span className="size-2 rounded-full bg-primary animate-pulse"></span>
+                <span className="text-xs font-bold text-primary uppercase tracking-widest">
+                  Envios Pet Premium
                 </span>
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Working Group
-                </h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-8">
-                  Dogs of the Working Group were bred to perform such jobs as
-                  guarding property, pulling sleds, and performing water
-                  rescues. They are quick to learn and highly intelligent.
+              <div className="flex flex-col gap-4">
+                <h1 className="text-5xl md:text-7xl font-black leading-tight text-white">
+                  Descubre todas las <span className="text-primary">razas</span>{" "}
+                  de perros
+                </h1>
+                <p className="text-lg text-slate-400 max-w-lg leading-relaxed">
+                  Explora razas, conoce sus grupos y aprende más con Ladrido. La
+                  guía definitiva para los amantes de los caninos.
                 </p>
               </div>
-              <button className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all flex items-center justify-center gap-2 group">
-                Ver grupo completo
-                <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
-                  arrow_forward
+              <div className="flex flex-wrap gap-4">
+                <button className="bg-primary hover:bg-primary/90 text-white h-14 px-8 rounded-xl font-bold flex items-center gap-2 transition-all shadow-lg shadow-primary/20 hover:scale-[1.02]">
+                  Explorar Razas
+                  <span className="material-symbols-outlined">explore</span>
+                </button>
+                <button className="bg-secondary hover:bg-secondary/90 text-white h-14 px-8 rounded-xl font-bold flex items-center gap-2 transition-all shadow-lg shadow-secondary/20 hover:scale-[1.02]">
+                  Ver Grupos
+                  <span className="material-symbols-outlined">group</span>
+                </button>
+              </div>
+            </div>
+            <div className="relative hidden md:block anim-float">
+              <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
+              <img
+                alt="Modern Dog Hero"
+                className="relative rounded-3xl object-cover w-full aspect-square shadow-2xl border border-white/10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_QBrsFdxkS0l101CdCcOpGQD1BG_gSMGvNd0DouMTHjy6RV3HPQHsUrU9ihMjYyf0Wom8aRqpOVsRThUMRUe6BnUEuDAAySqmcYL-1xJVD10ocAYJVvp-twGnbHeoiAZBmvB9eTrye1gSIqLeG8wTAYL2YcC2JmwZ1OnbTYqCoz18HVYPf_68E_qBuwMLruXkpmDLx1Asq-ydGeNZ4WQqZxkin0xLQm9vyZ7xqOeHwK67WGaliaZphPCsvsW6BYGpRqGK-8MV"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="px-6 md:px-20 -mt-8 relative z-20 anim-fade-in bg-[#0f0817]">
+          <div className="max-w-7xl mx-auto bg-[#120b1b]/90 border border-white/10 p-4 md:p-6 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-4 items-center backdrop-blur-xl">
+            <div className="relative w-full md:flex-1">
+              <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                search
+              </span>
+              <input
+                className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                placeholder="Buscar razas de perros..."
+                type="text"
+              />
+            </div>
+            <div className="flex gap-3 w-full md:w-auto">
+              <div className="relative w-full md:w-48">
+                <select className="w-full bg-white/5 border border-white/10 rounded-xl py-3 px-4 text-slate-100 appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all cursor-pointer">
+                  <option value="">Todos los grupos</option>
+                  <option value="cazadores">Cazadores</option>
+                  <option value="compania">Compañía</option>
+                  <option value="trabajo">Trabajo</option>
+                  <option value="pastoreo">Pastoreo</option>
+                </select>
+                <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">
+                  expand_more
                 </span>
+              </div>
+              <button className="bg-white/5 hover:bg-white/10 text-slate-300 px-6 py-3 rounded-xl font-medium transition-all">
+                Limpiar
               </button>
             </div>
           </div>
-        </div>
+        </section>
+        <section className="px-6 md:px-20 py-16 bg-[#120b1b]">
+          <div className="max-w-7xl mx-auto anim-fade-in">
+            <div className="flex items-center justify-between mb-10">
+              <h2 className="text-3xl font-bold text-white">
+                Razas Destacadas
+              </h2>
+              <div className="flex gap-2">
+                <button className="size-10 rounded-full glass-panel flex items-center justify-center text-white hover:bg-primary transition-colors">
+                  <span className="material-symbols-outlined">
+                    chevron_left
+                  </span>
+                </button>
+                <button className="size-10 rounded-full glass-panel flex items-center justify-center text-white hover:bg-primary transition-colors">
+                  <span className="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="glass-panel bg-[#1a1224]/80 rounded-2xl p-4 flex flex-col gap-4 card-hover transition-all duration-300 group hover:scale-[1.02]">
+                <div className="relative overflow-hidden rounded-xl">
+                  <img
+                    alt="Golden Retriever"
+                    className="aspect-square object-cover w-full group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-dgUYdi5zYplPJaV2Az6jEa-yhbTqa8JkzQ5hsQ3bg5rGzQntvsZr3DDFpwp1tsv6TehRADeknAXAfdCVOIxUMfnQQOFP7kui4MDbQlyBNdS41ckDob5YaIUU857sPOjbkbYFoKQ7NakeWnSF8HMoj1IgQ7Sz-vIGV4AOH7LwnVuQsnW9VZZSXnxLuIArJbOW-Vm-jdMyQiOFEAL0212zwJFFuOCXhrhlEq9uDBwotgIhzI1Z7As6p9Rekf4luFiMQ7CZ4R7R"
+                  />
+                  <span className="absolute top-3 left-3 bg-secondary/70 text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded-md shadow-lg shadow-secondary/40 ring-1 ring-white/10 backdrop-blur-md">
+                    Cazadores
+                  </span>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-lg font-bold text-white">
+                    Golden Retriever
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Inteligente, amigable y confiado.
+                  </p>
+                </div>
+                <button className="w-full bg-primary/20 hover:bg-primary text-primary hover:text-white py-2.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 mt-2 hover:scale-[1.02]">
+                  Ver detalle
+                  <span className="material-symbols-outlined text-sm">
+                    arrow_forward
+                  </span>
+                </button>
+              </div>
+              <div className="glass-panel bg-[#1a1224]/80 rounded-2xl p-4 flex flex-col gap-4 card-hover transition-all duration-300 group hover:scale-[1.02]">
+                <div className="relative overflow-hidden rounded-xl">
+                  <img
+                    alt="Husky"
+                    className="aspect-square object-cover w-full group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnHFSeGuQzITroxwpvmsmFdWAtxK8AW5n1geJUtb98DcNUmzY4ejY3VoBigQjeQRErDw9oSGZMHpQfmip9KGxDaEXilkUVm2lAuq0FOOxDRDYuu9RGXZW5lkQoMdWTZnVDUuHQta-sYtd1XeWqpYp4qD1IV_4wFRSLpLsludHo2hpkaiau-jecUVr75DCE6VSFrOQWHUC4lm7nyUZAxTYQyAYf6-3mi8iso0Z3YqJCWuVuQjJWuPWAdiE38IREHTL1-kTMfLSh"
+                  />
+                  <span className="absolute top-3 left-3 bg-secondary/70 text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded-md shadow-lg shadow-secondary/40 ring-1 ring-white/10 backdrop-blur-md">
+                    Trabajo
+                  </span>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-lg font-bold text-white">
+                    Siberian Husky
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Enérgico, extrovertido y gentil.
+                  </p>
+                </div>
+                <button className="w-full bg-primary/20 hover:bg-primary text-primary hover:text-white py-2.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 mt-2 hover:scale-[1.02]">
+                  Ver detalle
+                  <span className="material-symbols-outlined text-sm">
+                    arrow_forward
+                  </span>
+                </button>
+              </div>
+              <div className="glass-panel bg-[#1a1224]/80 rounded-2xl p-4 flex flex-col gap-4 card-hover transition-all duration-300 group hover:scale-[1.02]">
+                <div className="relative overflow-hidden rounded-xl">
+                  <img
+                    alt="Beagle"
+                    className="aspect-square object-cover w-full group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0xAPyMzji_3KwYocr13UgLpOXrvLBmG-xXeNgcASUOxiuiFPaDlK_w2mf2TWAV4MeacDas6st9FK83pSKQStACYlUeLj4QICVmlk7GavX-BeWQnvQjB7n7Ngb0DwoIFSOihOkb_OGG0ar-M4hXu6WkSmEHFww5X4pHcZRvixKhkpLiaqOI6xOo4Kg8URFQk3W0lswh-atbatF7hBNldbAR7GWNPtJfw2aFR8Tj8dC_vzVctX2BN7b8AajBEz-HCzNXpNvtaqR"
+                  />
+                  <span className="absolute top-3 left-3 bg-secondary/70 text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded-md shadow-lg shadow-secondary/40 ring-1 ring-white/10 backdrop-blur-md">
+                    Cazadores
+                  </span>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-lg font-bold text-white">Beagle</h3>
+                  <p className="text-xs text-slate-400">
+                    Curioso, amable y alegre.
+                  </p>
+                </div>
+                <button className="w-full bg-primary/20 hover:bg-primary text-primary hover:text-white py-2.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 mt-2 hover:scale-[1.02]">
+                  Ver detalle
+                  <span className="material-symbols-outlined text-sm">
+                    arrow_forward
+                  </span>
+                </button>
+              </div>
+              <div className="glass-panel bg-[#1a1224]/80 rounded-2xl p-4 flex flex-col gap-4 card-hover transition-all duration-300 group hover:scale-[1.02]">
+                <div className="relative overflow-hidden rounded-xl">
+                  <img
+                    alt="Pomeranian"
+                    className="aspect-square object-cover w-full group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1NdE4UNHC8LfNqOQDEbfQEW7dHMgzXRifTaVUEyS2x7iuiA5Qbq49dwR1YDBaMHy2T9EYwJzeDyuc0UohX9Kj_BnmtFOTgw711rR8IerCuvelaLEEvZm6xhXNklHmgpaJ1jtUuXuJSy5Owd9i_ShDGU5qNMS9_lx0Q1a_01aR8ZnUKxyW4HTRGumjqfHGkygjCLpmFsKoGeUIQ54cSsaR4B9NB_iJlLxi-ZAhtEUf1v0xe24Gql98_TsAPmFtr5y2I949RlAf"
+                  />
+                  <span className="absolute top-3 left-3 bg-secondary/70 text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded-md shadow-lg shadow-secondary/40 ring-1 ring-white/10 backdrop-blur-md">
+                    Compañía
+                  </span>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-lg font-bold text-white">Pomeranian</h3>
+                  <p className="text-xs text-slate-400">
+                    Vivaz, sociable y muy inteligente.
+                  </p>
+                </div>
+                <button className="w-full bg-primary/20 hover:bg-primary text-primary hover:text-white py-2.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 mt-2 hover:scale-[1.02]">
+                  Ver detalle
+                  <span className="material-symbols-outlined text-sm">
+                    arrow_forward
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className="mt-12 flex justify-center">
+              <button className="border border-white/10 hover:border-primary/50 bg-white/5 text-slate-300 px-10 py-4 rounded-xl font-bold transition-all flex items-center gap-2 hover:scale-[1.02]">
+                Ver todas las razas
+                <span className="material-symbols-outlined">grid_view</span>
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="glass border-t border-primary/10 py-12 px-4 md:px-10 mt-12">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-4 text-primary">
-            <span className="material-symbols-outlined text-3xl">pets</span>
-            <h2 className="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight">
-              Ladrido
-            </h2>
-          </div>
-          <nav className="flex gap-8 text-slate-500 dark:text-slate-400 font-medium">
-            <a className="hover:text-primary transition-colors" href="#">
-              Home
-            </a>
-            <a className="hover:text-primary transition-colors" href="#">
-              Explore
-            </a>
-            <a className="hover:text-primary transition-colors" href="#">
-              About
-            </a>
-            <a className="hover:text-primary transition-colors" href="#">
-              Contact
-            </a>
-          </nav>
-          <div className="flex gap-4">
-            <div className="size-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-all">
-              <span className="material-symbols-outlined text-lg">share</span>
+      <footer className="bg-[#0a060f] border-t border-white/5 px-6 md:px-20 py-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex flex-col gap-2 items-center md:items-start">
+            <div className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-primary">
+                pets
+              </span>
+              <span className="text-xl font-extrabold text-white">Ladrido</span>
             </div>
-            <div className="size-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-all">
-              <span className="material-symbols-outlined text-lg">mail</span>
-            </div>
+            <p className="text-slate-500 text-sm">
+              Proyecto técnico para{" "}
+              <span className="text-primary font-semibold">Envios Pet</span>
+            </p>
           </div>
-        </div>
-        <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-primary/5 text-center text-slate-500 text-sm">
-          © 2024 Ladrido Breed Explorer. Todos los derechos reservados.
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex gap-6">
+              <a
+                className="text-slate-500 hover:text-primary transition-colors"
+                href="#"
+              >
+                <span className="material-symbols-outlined">share</span>
+              </a>
+              <a
+                className="text-slate-500 hover:text-primary transition-colors"
+                href="#"
+              >
+                <span className="material-symbols-outlined">
+                  alternate_email
+                </span>
+              </a>
+              <a
+                className="text-slate-500 hover:text-primary transition-colors"
+                href="#"
+              >
+                <span className="material-symbols-outlined">public</span>
+              </a>
+            </div>
+            <p className="text-[10px] text-slate-600 uppercase tracking-widest">
+              © 2024 Ladrido. Todos los derechos reservados.
+            </p>
+          </div>
+          <div className="flex gap-8 text-sm font-medium text-slate-400">
+            <a className="hover:text-white transition-colors" href="#">
+              Privacidad
+            </a>
+            <a className="hover:text-white transition-colors" href="#">
+              Términos
+            </a>
+            <a className="hover:text-white transition-colors" href="#">
+              Soporte
+            </a>
+          </div>
         </div>
       </footer>
-      <a
-        className="fixed bottom-8 left-8 glass px-6 py-3 rounded-full flex items-center gap-2 hover:bg-primary hover:text-white transition-all z-50 shadow-xl group"
-        href="#"
-      >
-        <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">
-          arrow_back
-        </span>
-        <span className="font-bold">Volver</span>
-      </a>
     </div>
   );
 }

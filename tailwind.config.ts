@@ -6,15 +6,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#8B5CF6",
-        primaryAlt: "#A855F7",
-        accent: "#F59E0B",
-        navy: "#1E40AF",
+        primary: "#a855f7",
+        secondary: "#f97316",
         "background-light": "#f7f5f8",
-        "background-dark": "#191022",
+        "background-dark": "#0f0817",
+        glass: "rgba(255, 255, 255, 0.05)",
       },
       fontFamily: {
         display: ["Inter", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "0.75rem",
+        lg: "1rem",
+        xl: "1.25rem",
+        full: "9999px",
       },
     },
   },
